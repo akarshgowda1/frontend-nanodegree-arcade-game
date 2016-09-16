@@ -234,3 +234,14 @@ var game = function() {
 
     }
 };
+
+// add time out function
+
+var timeout= function() {
+	var date= new Date();
+	var start_time= date.getTime();
+	
+	 ctx.clearRect(400, 0, 180, 70);
+     ctx.fillText("Life:" + life, 400, 0);
+	
+};
