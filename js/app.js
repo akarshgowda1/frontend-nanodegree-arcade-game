@@ -285,3 +285,42 @@ var game = function() {
 
     }
 };
+
+
+var date= new Date();
+var start_time= date.getTime();
+var end_time= start_time+20000;
+var time_over=0;
+
+var timing = function() {
+	var current= new Date();
+	var current_time= current.getTime();
+	var time =  end_time - current_time;
+	var time_string= String(time);
+	if(time>10000)
+	{
+	ctx.clearRect(130,0,200,25);
+	ctx.fillText('Time:'+time_string[0]+time_string[1], 140,25);
+	}
+	else if(time > 1000 ){
+	ctx.clearRect(130,0,200,25);
+	ctx.fillText('Time:'+time_string[0], 140,25);	
+	}
+	else{
+		ctx.clearRect(130,0,200,25);
+	ctx.fillText('Time:0', 140,25);	
+	}
+	if(time<=0)
+		time_over=1;
+};
+
+var timeout = function() {
+	if(time_over)
+	{
+		ctx.fillText('Time Out', 150, 260);
+        ctx.fillText('Score:' + points, 170, 320);
+        ctx.fillText('Press Enter to Restart', 80, 380);
+		game_over= 1;
+		
+	}
+}

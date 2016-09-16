@@ -101,6 +101,7 @@ var Engine = (function(global) {
         player.update();
         gem.update();
         levels();
+		timing();
         if (!game_over) {
             win.requestAnimationFrame(updateEntities);
         }
@@ -147,6 +148,7 @@ var Engine = (function(global) {
         renderEntities();
         collision();
         game();
+		timeout();
         win.requestAnimationFrame(render);
 
     }
