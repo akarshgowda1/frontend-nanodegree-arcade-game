@@ -1,6 +1,28 @@
-frontend-nanodegree-arcade-game
-===============================
+#Arcade Game Clone
 
-Students should use this [rubric](https://review.udacity.com/#!/projects/2696458597/rubric) for self-checking their submission. Make sure the functions you write are **object-oriented** - either class functions (like Player and Enemy) or class prototype functions such as Enemy.prototype.checkCollisions, and that the keyword 'this' is used appropriately within your class and class prototype functions to refer to the object the function is called upon. Also be sure that the **readme.md** file is updated with your instructions on both how to 1. Run and 2. Play your arcade game.
+This is a simple game that runs on the browser where u need to Escape from the enemy bugs and reach the destination or collect  to earn points.
 
-For detailed instructions on how to get started, check out this [guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
+##Installation 
+
+No installation required just run the index.html using a browser of your choice.
+
+##How to Run
+
+Open the Index.html in a browser and the game is set to run.
+
+##Directions To play
+
+-`up` Arrow : To Move Up
+-`Down` Arrow : to Move Down
+-`Right` Arrow : To move Right
+-'Left` Arrow : To Move Left
+-'Enter' : To restart game 
+
+##How To Play 
+-Move the player using the keys mentioned above.
+-Player will be provided with 3 lives.
+-Player earns one point when he/she reaches the destination or collects Gems. Collecting Gems earns player 2 points. 
+-Level increases for every 5 points, higher the level higher the difficulty.
+-When player collides to an enemy the lives are lost, when all lives are lost game gets over to continue press enter,Game restarts.
+-When player reaches destination press any Navigation keys mentioned above to start again from the spawn.
+
